@@ -34,7 +34,9 @@
     "test": "npm run jest -- --ci --runInBand && codecov",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
-  "dependencies": {},
+  "dependencies": {
+    "superstruct": "^0.8.2"
+  },
   "devDependencies": {
     "auto-changelog": "^1.16.1",
     "chalk": "^2.4.2",
