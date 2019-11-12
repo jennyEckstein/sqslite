@@ -1,0 +1,71 @@
+{
+  "name": "sqslite",
+  "version": "0.0.0",
+  "description": "AWS SQS Mock",
+  "keywords": [],
+  "author": "Lifion.OpenSource@ADP.com",
+  "maintainers": [
+    "Chen Doron <Chen.Doron@ADP.com>",
+    "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
+    "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
+    "Zaid Masud <Zaid.Masud@ADP.com>"
+  ],
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifion/lifion-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifion/lifion-template/issues"
+  },
+  "homepage": "https://github.com/lifion/lifion-template#readme",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "build-docs": "jsdoc2md -t ./templates/README.hbs ./lib/*.js > ./README.md && git add ./README.md",
+    "build-docs-watch": "npm-watch build-docs",
+    "eslint": "eslint . --ext .js,.json --ignore-pattern='!.*.*'",
+    "format": "prettier --write '**/*.{md,js,json}' '!coverage/**/*.{js,json}'",
+    "jest": "jest -c ./.jest.json",
+    "prepare": "check-engines",
+    "test": "npm run jest -- --ci --runInBand && codecov",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "auto-changelog": "^1.16.1",
+    "chalk": "^2.4.2",
+    "check-engines": "^1.5.0",
+    "codecov": "^3.6.1",
+    "eslint": "^6.4.0",
+    "eslint-config-lifion": "^1.3.0",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "jsdoc-to-markdown": "^5.0.1",
+    "lint-staged": "^9.3.0",
+    "npm-watch": "^0.6.0",
+    "prettier": "^1.18.2",
+    "semver": "^6.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build-docs && lint-staged",
+      "pre-push": "npm run eslint && npm run jest"
+    }
+  },
+  "watch": {
+    "build-docs": {
+      "patterns": [
+        "lib"
+      ]
+    }
+  },
+  "@lifion/core-commons": {
+    "template": "public",
+    "updated": "2019-08-27T00:12:46.780Z",
+    "version": "2.3.3"
+  }
+}

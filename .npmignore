@@ -1,0 +1,7 @@
+*.md
+*.test.js
+/.*
+/coverage
+/docs
+/templates
+__mocks__
