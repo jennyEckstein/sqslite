@@ -20,7 +20,7 @@
     "url": "https://github.com/lifion/lifion-template/issues"
   },
   "homepage": "https://github.com/lifion/lifion-template#readme",
-  "bin": "bin/sqslite",
+  "bin": "bin/cli.js",
   "main": "lib/index.js",
   "engines": {
     "node": ">=10.0.0"
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "fastify": "^2.10.0",
+    "minimist": "^1.2.0",
     "superstruct": "^0.8.2"
   },
   "devDependencies": {
