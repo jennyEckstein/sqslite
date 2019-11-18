@@ -3,7 +3,7 @@
 'use strict';
 
 const argv = require('minimist')(process.argv.slice(2));
-const sqsLiteServer = require('../lib');
+const sqslite = require('../lib');
 
 const DEFAULT_PORT = 4576;
 
@@ -18,13 +18,12 @@ if (argv.help) {
   'Options:',
   '--help                 Display this help message and exit',
   '--port <port>          The port to listen on (default: 4567)',
-  '',
   'Report bugs at github.com/jennyEckstein/sqslite/issues'`
     ].join('\n')
   );
 }
 
-sqsLiteServer.listen(argv.port || DEFAULT_PORT, (err, address) => {
+sqslite({}).listen(argv.port || DEFAULT_PORT, (err, address) => {
   if (err) throw err;
-  sqsLiteServer.log.info(`server listening on ${address}`);
+  console.log(`server listening on ${address}`);
 });
