@@ -32,7 +32,7 @@
     "format": "prettier --write '**/*.{md,js,json}' '!coverage/**/*.{js,json}'",
     "jest": "jest -c ./.jest.json",
     "prepare": "check-engines",
-    "test": "npm run jest -- --ci --runInBand",
+    "test": "npm run jest --runInBand",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
