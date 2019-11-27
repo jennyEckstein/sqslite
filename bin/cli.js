@@ -10,15 +10,15 @@ const DEFAULT_PORT = 4576;
 if (argv.help) {
   return console.log(
     [
-      ` '',
-  'Usage: sqslite [--port <port>] [--path <path>] [options]',
-  '',
-  'A SQS http server',
-  '',
-  'Options:',
-  '--help                 Display this help message and exit',
-  '--port <port>          The port to listen on (default: 4567)',
-  'Report bugs at github.com/jennyEckstein/sqslite/issues'`
+      '',
+      'Usage: sqslite [--port <port>] [--path <path>] [options]',
+      '',
+      'A SQS http server',
+      '',
+      'Options:',
+      '--help                 Display this help message and exit',
+      '--port <port>          The port to listen on (default: 4567)',
+      'Report bugs at github.com/jennyEckstein/sqslite/issues'
     ].join('\n')
   );
 }
