@@ -19,3 +19,8 @@ ERROR, Cannot find module.
 ## License
 
 [MIT](./LICENSE)
+
+## TODOs
+
+// TODO: Add tests for Policy attribute, when functionality implemented, - add to readme file
+// TODO: when delete-queue functionality implemented, need to add check for QueueDeletedRecently error
