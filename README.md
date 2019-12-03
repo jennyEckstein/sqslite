@@ -1,26 +1,58 @@
-# lifion-template
+# Sqslite
 
-[![npm version](https://badge.fury.io/js/lifion-template.svg)](http://badge.fury.io/js/lifion-template)
+An implementation of Amazon's SQS
 
-## Getting Started
-
-To install the module:
+### Example
 
 ```sh
-npm install lifion-template --save
+$ sqslite --help
+
+Usage: sqslite [options]
+A SQS http server
+
+Options:
+--help Display this help message and exit
+--port <port> The port to listen on (default: 4567)
+  Report bugs at github.com/jennyEckstein/sqslite/issues
 ```
 
-## Features
+Or programmatically:
 
-## API Reference
+```javascript
+const sqslite = require('sqslite');
 
-ERROR, Cannot find module.
+sqslite({}).listen(3001, (err, address) => {
+  if (err) throw err;
+  console.log(`server listening on ${address}`);
+});
+```
 
-## License
+Once running, here's how to use AWS SDK to connect:
+
+```javascript
+const AWS = require('aws-sdk');
+
+const sqs = new AWS.SQS({ endpoint: 'http://localhost:3001' });
+await sqs.listQueues().promise();
+```
+
+### Installation
+
+With npm do:
+
+```sh
+$ npm install -g sqslite
+```
+
+### Footnotes:
+
+At the moment only createQueue and listQueue are available.
+
+### TODOs
+
+- Add tests for Policy attribute, when functionality implemented
+- when delete-queue functionality implemented, need to add check for QueueDeletedRecently error
+
+### License
 
 [MIT](./LICENSE)
-
-## TODOs
-
-// TODO: Add tests for Policy attribute, when functionality implemented, - add to readme file
-// TODO: when delete-queue functionality implemented, need to add check for QueueDeletedRecently error

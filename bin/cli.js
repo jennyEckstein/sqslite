@@ -11,7 +11,7 @@ if (argv.help) {
   return console.log(
     [
       '',
-      'Usage: sqslite [--port <port>] [--path <path>] [options]',
+      'Usage: sqslite [options]',
       '',
       'A SQS http server',
       '',
