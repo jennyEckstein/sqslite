@@ -1,0 +1,6 @@
+{
+  "AWSTraceHeader": {
+    "DataType": "String",
+    "StringValue": "Foo=bar&baz=qux"
+  }
+}
