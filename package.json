@@ -43,7 +43,7 @@
     "minimist": "^1.2.0",
     "superstruct": "^0.8.3",
     "uuid": "^3.4.0",
-    "xmlbuilder": "^13.0.2"
+    "xmlbuilder": "^14.0.0"
   },
   "devDependencies": {
     "auto-changelog": "^1.16.2",
