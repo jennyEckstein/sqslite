@@ -50,7 +50,7 @@
     "aws-sdk": "^2.639.0",
     "chalk": "^3.0.0",
     "check-engines": "^1.5.0",
-    "codecov": "^3.6.2",
+    "codecov": "^3.6.5",
     "eslint": "^6.8.0",
     "eslint-config-lifion": "^1.3.3",
     "husky": "^4.2.3",
