@@ -46,7 +46,7 @@
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "auto-changelog": "^1.16.4",
+    "auto-changelog": "^2.1.0",
     "aws-sdk": "^2.699.0",
     "chalk": "^4.1.0",
     "check-engines": "^1.5.0",
