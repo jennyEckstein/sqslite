@@ -54,7 +54,7 @@
     "eslint": "^7.2.0",
     "eslint-config-lifion": "^1.4.0",
     "husky": "^4.2.5",
-    "jest": "^26.0.1",
+    "jest": "^26.1.0",
     "jest-xml-matcher": "^1.2.0",
     "jsdoc-to-markdown": "^6.0.1",
     "lint-staged": "^10.2.11",
