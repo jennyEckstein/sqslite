@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "auto-changelog": "^2.1.0",
-    "aws-sdk": "^2.704.0",
+    "aws-sdk": "^2.705.0",
     "chalk": "^4.1.0",
     "check-engines": "^1.5.0",
     "codecov": "^3.7.0",
