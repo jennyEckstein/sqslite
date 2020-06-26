@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "checkJs": true,
     "esModuleInterop": true,
     "lib": ["es2016", "es2017.object", "es2017.string"],
     "module": "commonjs",
     "moduleResolution": "node",
+    "paths": {
+      "url": ["node_modules/@types/node/url.d.ts"]
+    },
     "resolveJsonModule": true,
     "target": "es6"
   },
-  "exclude": ["**/*.test.js", "**/__mocks__", "node_modules"]
+  "exclude": ["**/*.test.js", "**/__mocks__", "node_modules", "coverage"]
 }
