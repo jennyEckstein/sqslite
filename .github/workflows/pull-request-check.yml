@@ -8,11 +8,11 @@ on:
       - develop
 jobs:
   test:
-    name: Node ${{ matrix.node_version }} on ${{ matrix.os }}
+    name: Node ${{ matrix.node-version }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: [10, 12, 13]
+        node-version: [10, 12, 13, 14]
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
       - name: Clone repository
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node_version: ${{ matrix.node_version }}.x
+          node-version: ${{ matrix.node-version }}.x
       - name: Install
         run: npm ci --loglevel=error
         env:
