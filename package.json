@@ -63,7 +63,7 @@
     "npm-watch": "^0.6.0",
     "prettier": "^2.0.5",
     "semver": "^7.3.2",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.7"
   },
   "husky": {
     "hooks": {
