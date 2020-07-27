@@ -43,7 +43,7 @@
     "md5": "^2.2.1",
     "minimist": "^1.2.5",
     "superstruct": "^0.10.12",
-    "uuid": "^8.2.0",
+    "uuid": "^8.3.0",
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
