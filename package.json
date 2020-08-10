@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/lifion/sqslite#readme",
   "main": "lib/index.js",
-  "bin": "bin/cli.js",
+  "bin": "bin/cli-new.js",
   "engines": {
     "node": ">=10"
   },
