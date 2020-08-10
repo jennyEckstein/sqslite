@@ -4,9 +4,17 @@
     {
       "files": ["bin/cli.js"],
       "rules": {
-        "consistent-return": ["warn"],
-        "strict": ["warn"]
+        "consistent-return": ["warn"]
       }
     }
-  ]
+  ],
+   "rules": {
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "no-console": "off",
+    "no-process-exit": "off",
+    "node/shebang": "off",
+    "security/detect-child-process": "off",
+    "security/detect-non-literal-require": "off"
+  }
 }
