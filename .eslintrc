@@ -2,7 +2,7 @@
   "extends": "lifion",
   "overrides": [
     {
-      "files": ["bin/cli-new.js"],
+      "files": ["bin/cli.js"],
       "rules": {
         "consistent-return": ["warn"]
       }
