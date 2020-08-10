@@ -4,7 +4,8 @@
     {
       "files": ["bin/cli.js"],
       "rules": {
-        "consistent-return": ["warn"]
+        "consistent-return": ["warn"],
+        "linebreak-style": 0
       }
     }
   ]
