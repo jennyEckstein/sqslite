@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* eslint linebreak-style: ["error", "unix"] */
+
 'use strict';
 
 const argv = require('minimist')(process.argv.slice(2));
