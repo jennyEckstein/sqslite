@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint linebreak-style: [2, "unix"] */
 
 'use strict';
 
