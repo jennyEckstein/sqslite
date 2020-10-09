@@ -49,7 +49,7 @@
   "devDependencies": {
     "@types/node": "^14.11.5",
     "auto-changelog": "^2.2.1",
-    "aws-sdk": "^2.768.0",
+    "aws-sdk": "^2.771.0",
     "chalk": "^4.1.0",
     "check-engines": "^1.5.0",
     "codecov": "^3.8.0",
