@@ -42,7 +42,7 @@
     "fastify-formbody": "^5.0.0",
     "md5": "^2.3.0",
     "minimist": "^1.2.5",
-    "superstruct": "^0.10.12",
+    "superstruct": "^0.10.13",
     "uuid": "^8.3.1",
     "xmlbuilder": "^15.1.1"
   },
