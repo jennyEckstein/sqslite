@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "dedent": "^0.7.0",
-    "fastify": "^3.9.1",
+    "fastify": "^3.9.2",
     "fastify-formbody": "^5.0.0",
     "md5": "^2.3.0",
     "minimist": "^1.2.5",
@@ -47,9 +47,9 @@
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.13",
+    "@types/node": "^14.14.14",
     "auto-changelog": "^2.2.1",
-    "aws-sdk": "^2.810.0",
+    "aws-sdk": "^2.813.0",
     "chalk": "^4.1.0",
     "check-engines": "^1.5.0",
     "codecov": "^3.8.1",
