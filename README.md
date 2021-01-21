@@ -30,9 +30,9 @@ sqslite({}).listen(3001, (err, address) => {
 Once running, here's how to use AWS SDK to connect:
 
 ```javascript
-const AWS = require('aws-sdk');
+const { SQSClient } = require('@aws-sdk/client-sqs');
 
-const sqs = new AWS.SQS({ endpoint: 'http://localhost:3001' });
+const sqs = new SQSClient({ endpoint: 'http://localhost:3001' });
 await sqs.listQueues().promise();
 ```
 

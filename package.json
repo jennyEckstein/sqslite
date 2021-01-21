@@ -37,6 +37,7 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
+    "aws-sdk": "^2.828.0",
     "dedent": "^0.7.0",
     "fastify": "^3.10.1",
     "fastify-formbody": "^5.0.0",
@@ -47,9 +48,9 @@
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
+    "@aws-sdk/client-sqs": "^3.3.0",
     "@types/node": "^14.14.21",
     "auto-changelog": "^2.2.1",
-    "aws-sdk": "^2.828.0",
     "chalk": "^4.1.0",
     "check-engines": "^1.5.0",
     "codecov": "^3.8.1",
