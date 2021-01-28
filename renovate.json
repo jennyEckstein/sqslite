@@ -1,0 +1,11 @@
+{
+  "assignees": ["BizzlePop34", "eaviles", "jennyEckstein"],
+  "branchPrefix": "feature/renovate-",
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
+}
