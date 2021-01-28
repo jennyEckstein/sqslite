@@ -2,7 +2,7 @@
   "assignees": ["BizzlePop34", "eaviles", "jennyEckstein"],
   "branchPrefix": "feature/renovate-",
   "extends": ["config:base"],
-  "rangeStrategy": "replace",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "updateTypes": ["minor", "patch"],
