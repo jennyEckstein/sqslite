@@ -33,7 +33,6 @@
     "format": "prettier --write '**/*.{md,js,json,ts}' '!coverage/**/*.{js,json}'",
     "prepare": "check-engines",
     "test": "jest -c ./.jest.json",
-    "type-check": "tsc --noEmit --project jsconfig.json",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
@@ -47,9 +46,9 @@
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.22",
+    "@types/node": "^14.14.25",
     "auto-changelog": "^2.2.1",
-    "aws-sdk": "^2.834.0",
+    "aws-sdk": "^2.838.0",
     "chalk": "^4.1.0",
     "check-engines": "^1.5.0",
     "codecov": "^3.8.1",
