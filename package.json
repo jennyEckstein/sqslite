@@ -1,6 +1,6 @@
 {
   "name": "sqslite",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
   "author": "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
@@ -33,7 +33,6 @@
     "format": "prettier --write '**/*.{md,js,json,ts}' '!coverage/**/*.{js,json}'",
     "prepare": "check-engines",
     "test": "jest -c ./.jest.json",
-    "type-check": "tsc --noEmit --project jsconfig.json",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
