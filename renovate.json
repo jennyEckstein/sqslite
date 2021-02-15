@@ -1,12 +1,15 @@
 {
   "assignees": ["BizzlePop34", "eaviles", "jennyEckstein"],
+  "automerge": true,
   "branchPrefix": "feature/renovate-",
-  "extends": ["config:base"],
-  "rangeStrategy": "bump",
-  "packageRules": [
-    {
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
+  "engines": {
+    "node": {
+      "enabled": false
     }
-  ]
+  },
+  "extends": ["config:base"],
+  "major": {
+    "automerge": false
+  },
+  "rangeStrategy": "bump"
 }
