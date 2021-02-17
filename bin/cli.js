@@ -3,6 +3,7 @@
 'use strict';
 
 const argv = require('minimist')(process.argv.slice(2));
+
 const sqslite = require('../lib');
 
 const DEFAULT_PORT = 4576;
