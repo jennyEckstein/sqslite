@@ -1,6 +1,4 @@
 name: Github Action Merge Dependabot
-uses: fastify/github-action-merge-dependabot@v1.1.1
-
 on:
   push:
     branches:
