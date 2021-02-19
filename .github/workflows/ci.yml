@@ -7,7 +7,7 @@ on:
     branches:
       - develop
 jobs:
-  check:
+  build:
     name: Node ${{ matrix.node-version }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -33,7 +33,7 @@ jobs:
         env:
           CI: true
   automerge:
-    needs: check
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: fastify/github-action-merge-dependabot@v1
