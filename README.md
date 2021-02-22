@@ -1,5 +1,7 @@
 # SQSLite
 
+![Codecov](https://img.shields.io/codecov/c/github/lifion/sqslite)
+
 An implementation of Amazon's Simple Queue Service (SQS). This project aims to imitate live SQS as close as possible.
 
 ## What about Localstack?
