@@ -1,0 +1,12 @@
+[
+  {
+    "Id": "id1",
+    "MessageBody": "foo",
+    "MessageGroupId": "123"
+  },
+  {
+    "Id": "id2",
+    "MessageBody": "foo",
+    "MessageGroupId": "123"
+  }
+]
