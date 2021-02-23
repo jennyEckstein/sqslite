@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: sans-serif;
+      }
+      pre code {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+
+    <h1>SQSLite</h1> 
+
+    <img alt="Codecov" src="https://img.shields.io/codecov/c/github/lifion/sqslite">
+    
+    <p>An implementation of Amazon's Simple Queue Service (SQS). This project aims to imitate live SQS as close as possible.</p>
+    
+    <h2>What about Localstack?</h2>
+    
+    <p>Localstack was an inspiration for this project. We used Localstack for our SQS needs before this project was started. We chose to create this implementation for the following reasons:</p>
+    <ul>
+      <li><b>Decoupled from Localstack.</b> Localstack runs many AWS service imitations and therefore builky for local development. Our goal is to have a lightweight implementation.</li>
+      <li><b>Native JavaScript module.</b> This module can be used as Command Line Interface (CLI) application or as an npm module.</li>
+    </ul>
+  
+    
+    <hr/>
+    
+    <h2>Example</h2>
+
+    <pre>
+      <code>
+        $ sqslite --help
+    
+        Usage: sqslite [options]
+        A SQS http server
+        
+        Options:
+        --help Display this help message and exit
+        --port <port> The port to listen on (default: 4567)
+          Report bugs at github.com/jennyEckstein/sqslite/issues
+      </code>
+    </pre>
+    
+   
+    Or programmatically:
+
+    <pre>
+      <code>
+        const sqslite = require('sqslite');
+    
+        sqslite({}).listen(3001, (err, address) => {
+          if (err) throw err;
+          console.log(`server listening on ${address}`);
+        });
+      </code>
+    </pre>
+    
+    
+    <p>Once running, here's how to use AWS SDK to connect:</p>
+    
+    <pre>
+      <code>
+        const AWS = require('aws-sdk');
+    
+        const sqs = new AWS.SQS({ endpoint: 'http://localhost:3001' });
+        await sqs.listQueues().promise();
+      </code>
+    </pre>
+    
+    
+    
+ <hr/>
+    
+    <h2>Installation</h2> 
+    
+    <p>With npm do:</p>
+
+    <pre>
+      <code>
+        npm install -g sqslite
+      </code>
+    </pre>
+    
+  
+    
+    <p>Or to install for development/testing in your project:</p>
+    
+    <pre>
+      <code>
+        npm install -D sqslite
+      </code>
+    </pre>
+ 
+    
+    <hr/>
+    
+  <p>Supported Functions</p>
+  <ul>
+    <li>ChangeMessageVisibility</li>
+    <li>CreateQueue</li>
+    <li>DeleteMessage</li>
+    <li>DeleteMessageBatch</li>
+    <li>DeleteQueue/li>
+    <li>GetQueueAttributes</li>
+    <li>GetQueueUrl</li>
+    <li>ListDeadLetterSourceQueues</li>
+    <li>ListQueueTags</li>
+    <li>ListQueues</li>
+    <li>PurgeQueue</li>
+    <li>ReceiveMessage</li>
+    <li>SendMessage</li>
+    <li>SendMessageBatch</li>
+    <li>SetQueueAttributes</li>
+    <li>TagQueue</li>
+    <li>UntagQueue</li>
+  </ul>
+   
+    <hr/>
+    
+    <h3>Media</h3> 
+    <a href="https://eng.lifion.com/introducing-sqslite-9d5d9554a34b" target="_blank">Introducing SQSLite</a>
+    
+    
+    <h3>License</h3> 
+    <a href="../LICENSE" target="_blank">MIT</a>
+    
+    
+  </body>
+</html>
