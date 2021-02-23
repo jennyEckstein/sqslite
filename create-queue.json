@@ -1,0 +1,4 @@
+{
+  "FifoQueue": "true",
+  "ContentBasedDeduplication": "true"
+}
