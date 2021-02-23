@@ -6,8 +6,7 @@
   "author": "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
   "maintainers": [
     "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
-    "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
-    "Zaid Masud <Zaid.Masud@ADP.com>"
+    "Jenny Eckstein <Jenny.Eckstein@ADP.com>"
   ],
   "contributors": [
     "Chen Doron <Chen.Doron@ADP.com>"
@@ -20,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/lifion/sqslite/issues"
   },
-  "homepage": "https://github.com/lifion/sqslite#readme",
+  "homepage": "https://lifion.github.io/sqslite",
   "main": "lib/index.js",
   "bin": "bin/cli.js",
   "engines": {
