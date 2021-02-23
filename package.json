@@ -1,6 +1,6 @@
 {
   "name": "sqslite",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
   "author": "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
