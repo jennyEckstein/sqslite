@@ -36,11 +36,3 @@ jobs:
         run: npx codecov
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
-  automerge:
-    needs: check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: fastify/github-action-merge-dependabot@v1.2.0
-        if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' }}
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
