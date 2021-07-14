@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "dedent": "^0.7.0",
-    "fastify": "^3.19.0",
+    "fastify": "^3.19.1",
     "fastify-formbody": "^5.0.0",
     "md5": "^2.3.0",
     "minimist": "^1.2.5",
@@ -48,9 +48,9 @@
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "@types/node": "^16.3.1",
+    "@types/node": "^16.3.2",
     "auto-changelog": "^2.3.0",
-    "aws-sdk": "^2.943.0",
+    "aws-sdk": "^2.945.0",
     "chalk": "^4.1.1",
     "check-engines": "^1.5.0",
     "codecov": "^3.8.2",
@@ -60,7 +60,7 @@
     "jest": "^27.0.6",
     "jest-xml-matcher": "^1.2.0",
     "jsdoc-to-markdown": "^7.0.1",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^11.0.1",
     "npm-watch": "^0.10.0",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",
