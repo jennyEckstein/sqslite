@@ -7,7 +7,8 @@
   "maintainers": [
     "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
     "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
-    "Hanna Rzheutskaya <Hanna.Rzheutskaya@adp.com>"
+    "Hanna Rzheutskaya <Hanna.Rzheutskaya@adp.com>",
+    "Kazuha Okamoto <Kazuha.Okamoto@adp.com>"
   ],
   "contributors": [
     "Chen Doron <Chen.Doron@ADP.com>"
@@ -40,8 +41,8 @@
   },
   "dependencies": {
     "dedent": "^0.7.0",
-    "fastify": "^3.19.1",
-    "fastify-formbody": "^5.0.0",
+    "fastify": "^3.20.1",
+    "fastify-formbody": "^5.1.0",
     "md5": "^2.3.0",
     "minimist": "^1.2.5",
     "superstruct": "^0.15.2",
