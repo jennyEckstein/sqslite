@@ -10,7 +10,7 @@ Localstack was an inspiration for this project. We used Localstack for our SQS n
 chose to create this implementation for the following reasons:
 
 - **Decoupled from Localstack.** Localstack runs many AWS service imitations and therefore builky for local development.
-Our goal is to have a lightweight implementation.
+  Our goal is to have a lightweight implementation.
 - **Native JavaScript module.** This module can be used as Command Line Interface (CLI) application or as an npm module.
 
 ---
@@ -27,72 +27,72 @@ Options:
 --help Display this help message and exit
 --port <port> The port to listen on (default: 4567)
   Report bugs at github.com/jennyEckstein/sqslite/issues
-  ```
+```
 
-  Or programmatically:
+Or programmatically:
 
-  ```javascript
-  const sqslite = require('sqslite');
+```javascript
+const sqslite = require('sqslite');
 
-  sqslite({}).listen(3001, (err, address) => {
+sqslite({}).listen(3001, (err, address) => {
   if (err) throw err;
   console.log(`server listening on ${address}`);
-  });
-  ```
+});
+```
 
-  Once running, here's how to use AWS SDK to connect:
+Once running, here's how to use AWS SDK to connect:
 
-  ```javascript
-  const AWS = require('aws-sdk');
+```javascript
+const AWS = require('aws-sdk');
 
-  const sqs = new AWS.SQS({ endpoint: 'http://localhost:3001' });
-  await sqs.listQueues().promise();
-  ```
+const sqs = new AWS.SQS({ endpoint: 'http://localhost:3001' });
+await sqs.listQueues().promise();
+```
 
-  ---
+---
 
-  ## Installation
+## Installation
 
-  With npm do:
+With npm do:
 
-  ```sh
-  npm install -g sqslite
-  ```
+```sh
+npm install -g sqslite
+```
 
-  Or to install for development/testing in your project:
+Or to install for development/testing in your project:
 
-  ```sh
-  npm install -D sqslite
-  ```
+```sh
+npm install -D sqslite
+```
 
-  ---
+---
 
-  ## Supported Functions
+## Supported Functions
 
-  - ChangeMessageVisibility
-  - CreateQueue
-  - DeleteMessage
-  - DeleteMessageBatch
-  - DeleteQueue
-  - GetQueueAttributes
-  - GetQueueUrl
-  - ListDeadLetterSourceQueues
-  - ListQueueTags
-  - ListQueues
-  - PurgeQueue
-  - ReceiveMessage
-  - SendMessage
-  - SendMessageBatch
-  - SetQueueAttributes
-  - TagQueue
-  - UntagQueue
+- ChangeMessageVisibility
+- CreateQueue
+- DeleteMessage
+- DeleteMessageBatch
+- DeleteQueue
+- GetQueueAttributes
+- GetQueueUrl
+- ListDeadLetterSourceQueues
+- ListQueueTags
+- ListQueues
+- PurgeQueue
+- ReceiveMessage
+- SendMessage
+- SendMessageBatch
+- SetQueueAttributes
+- TagQueue
+- UntagQueue
 
-  ---
+---
 
-  ### Media
+### Media
 
-  [Introducing SQSLite](https://eng.lifion.com/introducing-sqslite-9d5d9554a34b)
+[Introducing SQSLite](https://eng.lifion.com/introducing-sqslite-9d5d9554a34b)
 
-  ### License
+### License
 
-  [MIT](./LICENSE)
+[MIT](./LICENSE)

@@ -9,7 +9,7 @@ const sqslite = require('../lib');
 const DEFAULT_PORT = 4576;
 
 if (argv.help) {
-  return console.log(
+  console.log(
     [
       '',
       'Usage: sqslite [options]',
@@ -22,9 +22,9 @@ if (argv.help) {
       'Report bugs at github.com/jennyEckstein/sqslite/issues'
     ].join('\n')
   );
+} else {
+  sqslite({}).listen(argv.port || DEFAULT_PORT, (err, address) => {
+    if (err) throw err;
+    console.log(`server listening on ${address}`);
+  });
 }
-
-sqslite({}).listen(argv.port || DEFAULT_PORT, (err, address) => {
-  if (err) throw err;
-  console.log(`server listening on ${address}`);
-});
