@@ -1,0 +1,22 @@
+{
+  "baseBody": {
+    "Action": "CreateQueue",
+    "Attribute.1.Name": "DelaySeconds",
+    "Attribute.1.Value": "20",
+    "Attribute.2.Name": "MaximumMessageSize",
+    "Attribute.2.Value": "2000",
+    "Attribute.3.Name": "MessageRetentionPeriod",
+    "Attribute.3.Value": "61",
+    "Attribute.4.Name": "VisibilityTimeout",
+    "Attribute.4.Value": "3",
+    "QueueName": "core-test5",
+    "Version": "2012-11-05"
+  },
+  "redrivePolicyBody": {
+    "Action": "CreateQueue",
+    "Attribute.1.Name": "RedrivePolicy",
+    "Attribute.1.Value": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":\"1000\"}",
+    "QueueName": "foo-bar",
+    "Version": "2012-11-05"
+  }
+}

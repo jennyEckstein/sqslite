@@ -7,7 +7,6 @@
     }
   ],
   "rules": {
-    "unicorn/numeric-separators-style": "off",
-    "no-secrets/no-secrets": "warn"
+    "unicorn/numeric-separators-style": "off"
   }
 }
