@@ -24,7 +24,7 @@
   "main": "lib/index.js",
   "bin": "bin/cli.js",
   "engines": {
-    "node": ">=v10.23.3"
+    "node": ">=v12"
   },
   "scripts": {
     "build-docs": "commons",
