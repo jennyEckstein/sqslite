@@ -11,8 +11,5 @@
         "no-secrets/no-secrets": ["error", { "ignoreContent": ["kmsDataKeyReusePeriodSeconds"] }]
       }
     }
-  ],
-  "rules": {
-    "unicorn/numeric-separators-style": "off"
-  }
+  ]
 }
