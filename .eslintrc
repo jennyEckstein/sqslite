@@ -4,12 +4,9 @@
     {
       "files": ["bin/cli.js"],
       "rules": { "consistent-return": ["warn"], "node/shebang": "off" }
-    },
-    {
-      "files": ["lib/utils/validations.js"],
-      "rules": {
-        "no-secrets/no-secrets": ["error", { "ignoreContent": ["kmsDataKeyReusePeriodSeconds"] }]
-      }
     }
-  ]
+  ],
+  "rules": {
+    "no-secrets/no-secrets": ["error", { "ignoreContent": ["kmsDataKeyReusePeriodSeconds"] }]
+  }
 }
