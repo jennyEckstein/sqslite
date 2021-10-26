@@ -1,12 +1,12 @@
 {
-  "extends": "lifion",
+  "extends": "./node_modules/core-commons/shared/eslint.json",
   "overrides": [
     {
       "files": ["bin/cli.js"],
-      "rules": {
-        "consistent-return": ["warn"],
-        "node/shebang": "off",
-      }
+      "rules": { "consistent-return": ["warn"], "node/shebang": "off" }
     }
-  ]
+  ],
+  "rules": {
+    "no-secrets/no-secrets": ["error", { "ignoreContent": ["kmsDataKeyReusePeriodSeconds"] }]
+  }
 }

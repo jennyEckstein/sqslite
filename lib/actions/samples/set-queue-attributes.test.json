@@ -1,0 +1,23 @@
+{
+  "baseBody": {
+    "Action": "SetQueueAttributes",
+    "Attribute.1.Name": "DelaySeconds",
+    "Attribute.1.Value": "10",
+    "Attribute.2.Name": "MaximumMessageSize",
+    "Attribute.2.Value": "131072",
+    "Attribute.3.Name": "MessageRetentionPeriod",
+    "Attribute.3.Value": "259200",
+    "Attribute.4.Name": "ReceiveMessageWaitTimeSeconds",
+    "Attribute.4.Value": "20",
+    "Attribute.5.Name": "RedrivePolicy",
+    "Attribute.5.Value": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":\"1000\"}",
+    "Attribute.6.Name": "VisibilityTimeout",
+    "Attribute.6.Value": "60",
+    "Attribute.7.Name": "FifoQueue",
+    "Attribute.7.Value": "true",
+    "Attribute.8.Name": "ContentBasedDeduplication",
+    "Attribute.8.Value": "true",
+    "QueueUrl": "http://localhost:3001/144505630525/jenny-test",
+    "Version": "2012-11-05"
+  }
+}
