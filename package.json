@@ -1,17 +1,18 @@
 {
   "name": "sqslite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
   "author": "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
   "maintainers": [
     "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
-    "Jenny Eckstein <Jenny.Eckstein@ADP.com>"
+    "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
+    "Hanna Rzheutskaya <Hanna.Rzheutskaya@adp.com>"
   ],
   "contributors": [
     "Chen Doron <Chen.Doron@ADP.com>"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/lifion/sqslite.git"
@@ -21,64 +22,43 @@
   },
   "homepage": "https://lifion.github.io/sqslite",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "bin",
+    "!*.test.js"
+  ],
   "bin": "bin/cli.js",
   "engines": {
-    "node": ">=v10.23.3"
+    "node": ">=v14"
   },
   "scripts": {
-    "build-docs": "jsdoc2md -t ./templates/README.hbs ./lib/*.js > ./README.md && git add ./README.md",
-    "build-docs-watch": "npm-watch build-docs",
-    "eslint": "eslint . --ext .js,.json --ignore-pattern='!.*.*'",
-    "format": "prettier --write '**/*.{md,js,json,ts}' '!coverage/**/*.{js,json}'",
-    "prepare": "check-engines",
-    "test": "jest -c ./.jest.json",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "build-docs": "commons",
+    "build-types": "commons",
+    "check-types": "commons",
+    "clean-types": "commons",
+    "eslint": "commons",
+    "prepare": "commons",
+    "prepublishOnly": "npm run build-types && npm run prettier",
+    "prettier": "commons",
+    "test": "commons",
+    "version": "commons"
   },
   "dependencies": {
     "dedent": "^0.7.0",
-    "fastify": "^3.12.0",
-    "fastify-formbody": "^5.0.0",
+    "fastify": "^3.22.1",
+    "fastify-formbody": "^5.1.0",
     "md5": "^2.3.0",
     "minimist": "^1.2.5",
-    "superstruct": "^0.14.2",
+    "superstruct": "^0.15.3",
     "uuid": "^8.3.2",
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.31",
-    "auto-changelog": "^2.2.1",
-    "aws-sdk": "^2.850.0",
-    "chalk": "^4.1.0",
-    "check-engines": "^1.5.0",
-    "codecov": "^3.8.1",
-    "eslint": "^7.20.0",
-    "eslint-config-lifion": "^2.0.2",
-    "husky": "^5.1.1",
-    "jest": "^26.6.3",
-    "jest-xml-matcher": "^1.2.0",
-    "jsdoc-to-markdown": "^6.0.1",
-    "lint-staged": "^10.5.4",
-    "npm-watch": "^0.7.0",
-    "prettier": "^2.2.1",
-    "semver": "^7.3.4",
-    "typescript": "^4.1.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build-docs && lint-staged",
-      "pre-push": "npm run eslint && npm test"
-    }
-  },
-  "watch": {
-    "build-docs": {
-      "patterns": [
-        "lib"
-      ]
-    }
-  },
-  "@lifion/core-commons": {
-    "template": "public",
-    "updated": "2020-06-26T20:08:10.211Z",
-    "version": "2.4.0"
+    "@types/md5": "^2.3.1",
+    "@types/node": "^16.11.2",
+    "@types/uuid": "^8.3.1",
+    "aws-sdk": "^2.1012.0",
+    "core-commons": "^1.0.0-alpha.2",
+    "jest-xml-matcher": "^1.2.0"
   }
 }

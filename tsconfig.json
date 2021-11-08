@@ -1,0 +1,4 @@
+{
+  "extends": "./node_modules/core-commons/shared/tsconfig.json",
+  "exclude": ["**/*.test.js", "**/__mocks__", "coverage", "node_modules"]
+}
