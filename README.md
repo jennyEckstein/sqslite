@@ -29,6 +29,16 @@ Options:
   Report bugs at github.com/jennyEckstein/sqslite/issues
 ```
 
+To serve up the SQSLite client:
+```
+$ sqslite --port=3001
+```
+
+To create a queue, first install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), then enter:
+```
+$ aws sqs create-queue --queue-name=test-queue-1 --region=us-east-1 --endpoint=http://localhost:3001
+```
+
 Or programmatically:
 
 ```javascript
