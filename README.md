@@ -29,6 +29,18 @@ Options:
   Report bugs at github.com/jennyEckstein/sqslite/issues
 ```
 
+To start the SQSLite server:
+```
+$ sqslite --port=3001
+```
+
+As a prerequisite to interacting with SQSLite through the command line, first install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). 
+
+In order to create a queue, run the command shown below. Make sure to provide the same endpoint url where SQSLite server is running.
+```
+$ aws sqs create-queue --queue-name=test-queue-1 --region=us-east-1 --endpoint=http://localhost:3001
+```
+
 Or programmatically:
 
 ```javascript
