@@ -34,7 +34,7 @@ To start the SQSLite server:
 $ sqslite --port=3001
 ```
 
-As a prerequisite to interacting with SQSLite through the command line, first install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). 
+As a prerequisite to interacting with SQSLite through the command line, first install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
 In order to create a queue, run the command shown below. Make sure to provide the same endpoint url where SQSLite server is running.
 ```
