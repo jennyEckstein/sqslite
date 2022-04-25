@@ -53,7 +53,7 @@
     "@types/node": "^16.11.29",
     "@types/uuid": "^8.3.4",
     "aws-sdk": "^2.1121.0",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "core-commons": "1.0.0-alpha.3",
     "jest-xml-matcher": "^1.2.0",
     "semver": "^7.3.7",
