@@ -1,5 +1,5 @@
 {
-  "name": "@lifion/sqslite",
+  "name": "sqslite",
   "version": "2.0.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
