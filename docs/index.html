@@ -51,6 +51,21 @@
       </code>
     </pre>
     
+    To serve up the SQSLite client:
+    <pre>
+      <code>
+        $ sqslite --port=3001
+      </code>
+    </pre>
+
+    As a prerequisite to interacting with SQSLite through the command line, first install <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">AWS CLI</a>.
+    <br>
+    <br>
+    In order to create a queue, run the command shown below. Make sure to provide the same endpoint url where SQSLite server is running.    <pre>
+      <code>
+        $ aws sqs create-queue --queue-name=test-queue-1 --region=us-east-1 --endpoint=http://localhost:3001
+      </code>
+    </pre>
    
     Or programmatically:
 

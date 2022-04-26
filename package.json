@@ -1,5 +1,5 @@
 {
-  "name": "sqslite",
+  "name": "@lifion/sqslite",
   "version": "2.0.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
@@ -45,20 +45,20 @@
   },
   "dependencies": {
     "dedent": "^0.7.0",
-    "fastify": "^3.22.1",
-    "fastify-formbody": "^5.1.0",
+    "fastify": "^3.28.0",
+    "fastify-formbody": "^5.2.0",
     "md5": "^2.3.0",
-    "minimist": "^1.2.5",
-    "superstruct": "^0.15.3",
+    "minimist": "^1.2.6",
+    "superstruct": "^0.15.4",
     "uuid": "^8.3.2",
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "@types/md5": "^2.3.1",
-    "@types/node": "^16.11.2",
-    "@types/uuid": "^8.3.1",
-    "aws-sdk": "^2.1012.0",
-    "core-commons": "^1.0.0-alpha.2",
+    "@types/md5": "^2.3.2",
+    "@types/node": "^16.11.30",
+    "@types/uuid": "^8.3.4",
+    "aws-sdk": "^2.1122.0",
+    "core-commons": "1.0.0-alpha.6",
     "jest-xml-matcher": "^1.2.0"
   }
 }
