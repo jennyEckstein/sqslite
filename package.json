@@ -1,6 +1,6 @@
 {
   "name": "sqslite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
   "author": "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
@@ -12,7 +12,7 @@
   "contributors": [
     "Chen Doron <Chen.Doron@ADP.com>"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/lifion/sqslite.git"
@@ -22,9 +22,14 @@
   },
   "homepage": "https://lifion.github.io/sqslite",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "bin",
+    "!*.test.js"
+  ],
   "bin": "bin/cli.js",
   "engines": {
-    "node": ">=v12"
+    "node": ">=v14"
   },
   "scripts": {
     "build-docs": "commons",
@@ -53,27 +58,7 @@
     "@types/node": "^16.11.29",
     "@types/uuid": "^8.3.4",
     "aws-sdk": "^2.1121.0",
-    "chalk": "^4.1.2",
-    "core-commons": "1.0.0-alpha.3",
-    "jest-xml-matcher": "^1.2.0",
-    "semver": "^7.3.7",
-    "typescript": "^4.6.3"
-  },
-  "files": [
-    "lib",
-    "bin",
-    "!*.test.js"
-  ],
-  "watch": {
-    "build-docs": {
-      "patterns": [
-        "lib"
-      ]
-    }
-  },
-  "@lifion/core-commons": {
-    "template": "public",
-    "updated": "2020-06-26T20:08:10.211Z",
-    "version": "2.4.0"
+    "core-commons": "1.0.0-alpha.6",
+    "jest-xml-matcher": "^1.2.0"
   }
 }
