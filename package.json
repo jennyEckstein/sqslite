@@ -1,5 +1,5 @@
 {
-  "name": "sqslite",
+  "name": "@lifion/sqslite",
   "version": "2.0.0",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
@@ -55,9 +55,9 @@
   },
   "devDependencies": {
     "@types/md5": "^2.3.2",
-    "@types/node": "^16.11.29",
+    "@types/node": "^16.11.30",
     "@types/uuid": "^8.3.4",
-    "aws-sdk": "^2.1121.0",
+    "aws-sdk": "^2.1122.0",
     "core-commons": "1.0.0-alpha.6",
     "jest-xml-matcher": "^1.2.0"
   }
