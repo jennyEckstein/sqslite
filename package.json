@@ -1,6 +1,6 @@
 {
-  "name": "@lifion/sqslite",
-  "version": "2.0.0",
+  "name": "sqslite",
+  "version": "2.0.1",
   "description": "Lightweight module for integration testing AWS SQS.",
   "keywords": [],
   "author": "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
