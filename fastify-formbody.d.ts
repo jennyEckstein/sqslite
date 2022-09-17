@@ -1,1 +1,1 @@
-declare module 'fastify-formbody'
+declare module 'fastify-formbody';
