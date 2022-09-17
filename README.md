@@ -25,6 +25,7 @@ A SQS http server
 
 Options:
 --help Display this help message and exit
+--host <host>          The host to listen on (default: localhost)
 --port <port> The port to listen on (default: 4567)
   Report bugs at github.com/jennyEckstein/sqslite/issues
 ```
